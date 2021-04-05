@@ -6,6 +6,9 @@
 trigger:
 - azure-pipelines
 
+job: Sample_Job
+timeoutInMinutes: 10
+
 pool:
   vmImage: ubuntu-latest
 strategy:
