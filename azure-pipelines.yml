@@ -7,14 +7,11 @@ trigger:
 - dev
 
 pool: default
+- vmImage: 'ubuntu-16.04'
 
 steps:
 
 - script: hostname
-
-- task: UsePythonVersion@0
-  inputs:
-    versionSpec: '3.6'
 
 
 - task: UsePythonVersion@0
@@ -32,10 +29,3 @@ steps:
     pip install pytest pytest-azurepipelines
     pytest
   displayName: 'pytest'
-
-$AGENT_TOOLSDIRECTORY/
-    Python/
-        3.6.4/
-            x64/
-                {tool files}
-            x64.complete
