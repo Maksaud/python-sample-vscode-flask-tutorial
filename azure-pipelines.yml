@@ -12,13 +12,6 @@ steps:
 
 - script: hostname
 
-$AGENT_TOOLSDIRECTORY/
-    Python/
-        3.6.4/
-            x64/
-                {tool files}
-            x64.complete
-
 - task: UsePythonVersion@0
   inputs:
     versionSpec: '3.6'
@@ -39,3 +32,10 @@ $AGENT_TOOLSDIRECTORY/
     pip install pytest pytest-azurepipelines
     pytest
   displayName: 'pytest'
+
+$AGENT_TOOLSDIRECTORY/
+    Python/
+        3.6.4/
+            x64/
+                {tool files}
+            x64.complete
