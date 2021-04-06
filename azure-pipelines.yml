@@ -6,7 +6,8 @@
 trigger:
 - dev
 
-pool: default
+pool:
+- name: Default
 - vmImage: 'ubuntu-16.04'
 
 steps:
