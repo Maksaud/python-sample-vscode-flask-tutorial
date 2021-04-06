@@ -6,10 +6,7 @@
 trigger:
 - dev
 
-pool:
-- name: Default
-- vmImage: 'ubuntu-16.04'
-
+pool: Default
 steps:
 
 - script: hostname
